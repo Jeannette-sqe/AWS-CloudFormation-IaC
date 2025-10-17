@@ -18,7 +18,7 @@ O CloudFormation não apenas cria a infraestrutura, mas também a gerencia duran
 
 **Conceitos Chave**
 
-![Imagem_Template](Res_AWS-CloudFormation_template_48.png)
+![Imagem_Template](Res_AWS-CloudFormation_Template_48.png)
 
 ***Templates*** (Modelos) 
 São arquivos de textos em formato **JSON** ou **YAML**, que contêm a descrição de todos os recursos da AWS que você deseja implantar. Permitindo a criação, atualização ou até a exclusão, enfim ele realiza o gerenciamento de recursos da AWS de maneira repetível e eficiente. O template especifica a configuração exata de cada recurso, como tipo, propriedades e dependências.
@@ -27,7 +27,7 @@ São arquivos de textos em formato **JSON** ou **YAML**, que contêm a descriç�
 
 Incluem seções como Resources (obrigatório), Parameters, Mappings, Outputs.
 
-![Imagem_stack](Res_AWS-Cloudformation_Stack_48.png)
+![Imagem_stack](Res_AWS-CloudFormation_Stack_48.png)
 
 ***Stacks*** (Pilhas)
 É a coleção de recursos e aplicações que são gerenciados como uma única unidade. Quando o template cria uma stack, todas as operações (criação, atualização, exclusão) são aplicadas ao nível desta stack, garantindo que os recursos nela contidos permaneçam em um estado consistente. A unidade de provisionamento.
@@ -100,4 +100,5 @@ O uso de !Ref MyS3Bucket garante que o valor retornado seja o nome físico real 
 
 Vimos que, ao usar templates YAML ou JSON para definir recursos em Stacks, eliminamos a complexidade de gerenciar serviços individualmente. 
 Assim, dominar o CloudFormation significa adotar a mentalidade de Infraestrutura como Código (IaC). Isso nos garante repetibilidade, automação e consistência em qualquer ambiente. 
+
 
